@@ -22,7 +22,7 @@ When I tested the system with a movie like *Toy Story (1995)*, the engine succes
 ### 📊 Project Execution & Results
 Below is the screenshot of the recommendation engine in action, showing the top 5 movie suggestions for 'Toy Story' and 'Star Wars':
 
-![Movie Recommendation Output](movie_recommendation_output.png)
+![Movie Recommendation Output](movie_recommendation_output.png..png)
 
 ## 🚀 Key Learning
 Through this project, I learned how to handle non-standard data formats (pipe-separated and tab-separated) and how to transform categorical text data into a numerical matrix that an AI model can understand.
