@@ -19,6 +19,9 @@ For this implementation, I focused on **Content-Based Filtering**.
 ## 📊 Sample Output
 When I tested the system with a movie like *Toy Story (1995)*, the engine successfully identified other high-similarity family and animation films:
 
+### 📊 Project Execution & Results
+Below is the screenshot of the recommendation engine in action, showing the top 5 movie suggestions for 'Toy Story' and 'Star Wars':
+
 ![Movie Recommendation Output](movie_recommendation_output.png)
 
 ## 🚀 Key Learning
