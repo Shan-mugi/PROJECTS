@@ -17,7 +17,7 @@ I compared three models to see which one caught the most fraud (Highest Recall):
 | **XGBoost** | **1.00** | **1.00** | **1.00** | **100%** |
 
 ### Execution Output:
-![Comparison Results](model_comparison_results.png)
+![Comparison Results](model_comparison_results.png.png)
 
 ## 📁 Dataset Info
 The dataset contains transactions made by credit cards in September 2013 by European cardholders.
