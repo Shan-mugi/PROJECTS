@@ -14,6 +14,13 @@ The model achieved a balanced performance across both sentiment classes:
 * **Accuracy:** 85%
 * **F1-Score:** 0.85
 
+## 📁 Dataset Information
+The dataset used for this project is the **IMDB Dataset of 50K Movie Reviews**. 
+Due to GitHub's file size limitations for large CSV files, the dataset is not included in this repository.
+
+You can download the official dataset here:
+[IMDB Dataset on Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+
 ![Sentiment Output](sentiment_output.png.png)
 
 ## 💡 Key Learnings
