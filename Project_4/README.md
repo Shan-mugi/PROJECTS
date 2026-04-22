@@ -1,24 +1,28 @@
-# Project 4: Credit Card Fraud Detection
-This project focuses on identifying fraudulent transactions using Machine Learning, specifically addressing the challenge of **Imbalanced Data**.
+# Project 4: Credit Card Fraud Detection (Comparative Study)
 
-## 📌 Problem Statement
-In real-world fraud data, the number of fraudulent transactions is tiny compared to legitimate ones. This "imbalance" makes it hard for AI to learn. 
+## 📌 Project Overview
+This project focuses on detecting fraudulent credit card transactions using Machine Learning. The primary challenge was the extreme class imbalance (less than 1% of transactions were fraud).
 
-## ⚙️ Methodology: SMOTE
-To solve this, I used **SMOTE** (Synthetic Minority Over-sampling Technique). Instead of just copying the fraud data, SMOTE creates "synthetic" examples to help the model recognize fraud patterns more effectively.
+## 🛠️ Techniques Used
+* **SMOTE (Synthetic Minority Over-sampling Technique):** To balance the dataset.
+* **Comparative Modeling:** Evaluating performance across different architectures to find the best detection engine.
 
-## 📁 Dataset
-Due to GitHub's file size limitations, the dataset is not uploaded here. 
-You can download the **Credit Card Fraud Detection** dataset from Kaggle:
-[Link to Dataset on Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+## 📊 Comparative Results
+I compared three models to see which one caught the most fraud (Highest Recall):
 
-### Results of Data Balancing:
-* **Initial Fraud Samples:** 492
-* **Balanced Fraud Samples:** 284,315 (via SMOTE)
+| Model | Precision | Recall | F1-Score | Accuracy |
+| :--- | :--- | :--- | :--- | :--- |
+| **Logistic Regression** | 0.99 | 0.97 | 0.98 | 98% |
+| **Random Forest** | 1.00 | 0.98 | 0.99 | 99% |
+| **XGBoost** | **1.00** | **1.00** | **1.00** | **100%** |
 
-![SMOTE Output](output_image.png)
+### Execution Output:
+![Comparison Results](model_comparison_results.png)
 
-## 🛠️ Tech Stack
-* **Language:** Python 3.14
-* **Libraries:** Pandas, Scikit-learn, Imbalanced-learn (SMOTE)
-* **Model:** Logistic Regression
+## 📁 Dataset Info
+The dataset contains transactions made by credit cards in September 2013 by European cardholders.
+* **Note:** Due to GitHub's file size limit (150MB+), the CSV file is not uploaded here. 
+* [Download the dataset from Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+## 💡 Conclusion
+XGBoost outperformed the other models by achieving a perfect recall score. This means the model successfully identified 100% of the fraudulent transactions in the test set without any false alarms.
