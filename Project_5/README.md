@@ -14,7 +14,7 @@ The model achieved a balanced performance across both sentiment classes:
 * **Accuracy:** 85%
 * **F1-Score:** 0.85
 
-![Sentiment Output](sentiment_output.png)
+![Sentiment Output](sentiment_output.png.png)
 
 ## 💡 Key Learnings
 * Understanding the importance of text cleaning in NLP.
